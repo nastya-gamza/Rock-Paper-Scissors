@@ -1,0 +1,77 @@
+@import './reset.css';
+
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/neon-grid-background_53876-91657.jpg?w=1060&t=st=1672986326~exp=1672986926~hmac=b84ee8ba20910e2a36a1c5256c7b003d79a16ca6dc3f413be38db64acd9a222f);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.hidden {
+    display: none;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player, .computer {
+    min-width: 345px;
+    min-height: 140px;
+    padding-bottom: 50px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+[data-player-choice], [data-computer-choice] {
+    font-size: 80px;
+}
+
+.player-choice {
+    cursor: pointer;
+}
+
+.player h2, .computer h2 {
+    padding: 30px 0 0;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+  }
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.vs {
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.result-message {
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
